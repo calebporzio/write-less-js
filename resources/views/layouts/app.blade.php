@@ -7,14 +7,18 @@
 
     <title>GitTub</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
     <div class="bg-gray-dark p-3">
-        <div class="text-white">
+        <div class="d-flex flex-items-center text-white">
             <svg fill="currentColor" class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+
+            <span class="f2 ml-2" style="font-family: Titillium Web;font-weight: 700;letter-spacing: .05em;">GitTub</span>
         </div>
     </div>
 
@@ -56,7 +60,7 @@
                 <svg height="16" fill="currentColor" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
                 Open
             </span>
-            <span class="text-gray ml-2"><a class="text-gray text-bold">calebporzio</a> opened this issue 2 hours ago · 4 comments</span>
+            <span class="text-gray ml-2"><a class="text-gray text-bold">calebporzio</a> opened this issue 2 hours ago · @yield('comment-count')</span>
         </div>
     </div>
 
@@ -76,47 +80,7 @@
 
             {{-- Main Content --}}
             <div style="width: 760px; float: left;">
-                {{-- Comment Box --}}
-                <div class="clearfix p-3">
-                    <div class="float-left mr-3">
-                        <img class="avatar rounded-1" height="44" width="44" alt="@calebporzio" src="https://avatars1.githubusercontent.com/u/3670578?s=88&amp;v=4">
-                    </div>
-                    <div class="overflow-hidden">
-                        <div class="Box Box--blue">
-                            <div class="Box-header" style="padding-top: 10px; padding-bottom: 10px">
-                                <span class="text-gray"><strong>calebporzio</strong> commented 2 hours ago</span>
-                            </div>
-                            <div class="Box-row">
-                                Box row one
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="border-bottom"></div>
-
-                {{-- Add Comment --}}
-                <div class="clearfix p-3">
-                    <div class="float-left mr-3">
-                        <img class="avatar rounded-1" height="44" width="44" alt="@calebporzio" src="https://avatars1.githubusercontent.com/u/3670578?s=88&amp;v=4">
-                    </div>
-                    <div class="overflow-hidden">
-                        <div class="Box">
-                            <div class="Box-header" style="padding-top: 10px; padding-bottom: 10px">
-                                <span class="text-gray"><strong>calebporzio</strong> commented 2 hours ago</span>
-                            </div>
-                            <div class="Box-row">
-                                <div class="form-group m-0">
-                                    <textarea placeholder="Leave a comment" style="min-height: 115px; height: 115px;" class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-justify-end pb-3 px-3">
-                                <button class="btn mr-2">Close Issue</button>
-                                <button class="btn btn-primary">Comment</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @yield('content')
             </div>
         </div>
     </div>

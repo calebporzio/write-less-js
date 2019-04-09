@@ -1,14 +1,13 @@
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// GitHub Primer
+@import "@primer/css/index.scss";
 
-// Variables
-@import 'variables';
+// Give selected navigation tabs a top border.
+.tabnav-tab {
+    border: 1px solid transparent;
+    border-top: 3px solid transparent;
+}
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.tabnav-tab.selected {
+    border-color: #e36209 #e1e4e8 transparent;
 }

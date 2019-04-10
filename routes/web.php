@@ -1,5 +1,8 @@
 <?php
 
+Route::view('code', 'code');
+Route::view('issues', 'issues');
+
 Route::get('/retro/comment', 'Retro\CommentController@index');
 Route::post('/retro/comment', 'Retro\CommentController@store');
 

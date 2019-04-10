@@ -16,10 +16,10 @@ class CommentController extends Controller
 
     public function store()
     {
-        Comment::create(request()->validate([
+        $comment = Comment::create(request()->validate([
             'content' => 'required',
         ], ['required' => 'The comment cannot be empty']));
 
-        return back();
+        return redirect()->to('/retro/comment#comment-'.$comment->id);
     }
 }

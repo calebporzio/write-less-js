@@ -8,7 +8,7 @@
         <form action="/retro/comment" method="POST">
             @csrf
             <div class="Box">
-                <div class="Box-header" style="padding-top: 10px; padding-bottom: 10px">
+                <div class="Box-header">
                     <span class="text-gray"><strong>calebporzio</strong> commented 2 hours ago</span>
                 </div>
 

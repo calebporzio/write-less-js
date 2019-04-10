@@ -2,6 +2,29 @@
 // GitHub Primer
 @import "@primer/css/index.scss";
 
+// Make box headers slimmer.
+.Box-header.Box-header--small {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+// Make box rows slimmer.
+.Box-row.Box-row--small {
+    padding-top: 6px;
+    padding-bottom: 6px
+}
+
+// Carrot for dropdown
+.dropdown-caret {
+    border: 4px solid transparent;
+    border-top-color: currentcolor;
+    content: "";
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+}
+
 // Give selected navigation tabs a top border.
 .tabnav-tab {
     border: 1px solid transparent;

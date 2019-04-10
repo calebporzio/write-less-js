@@ -18,7 +18,6 @@
                     </div>
 
                     {!! $errors->first('content', '<span class="text-red">:message</span>') !!}
-
                 </div>
 
                 <div class="d-flex flex-justify-end pb-3 px-3">

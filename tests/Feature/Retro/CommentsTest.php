@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\Retro;
 
 use App\Comment;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -54,9 +54,9 @@ class CommentsTest extends TestCase
     {
         $this->get('/retro/comment');
 
-        $this->post('/retro/comment', [
+        $this->followingRedirects()->post('/retro/comment', [
             'content' => '',
-        ])->assertSessionHasErrors('content');
+        ])->assertSee('The comment cannot be empty');
 
         $this->assertEmpty(Comment::all());
     }

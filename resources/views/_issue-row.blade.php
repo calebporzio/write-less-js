@@ -5,7 +5,7 @@
         </div>
         <div class="overflow-hidden">
             <div class="">
-                <a href="/retro/comment" class="f4 text-bold text-gray-dark">{{ $title }}</a>
+                <a href="/issue" class="f4 text-bold text-gray-dark">{{ $title }}</a>
             </div>
             <div class="text-gray text-small">
                 #28172 opened an hour ago by adamthehutt

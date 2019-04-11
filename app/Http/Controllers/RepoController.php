@@ -13,8 +13,8 @@ class RepoController
 
         $search = request('search');
 
-        return [
+        return view('_repo-list', [
             'repos' => Repository::search('name', $search)->limit(4)->get(),
-        ];
+        ]);
     }
 }

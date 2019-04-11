@@ -51,12 +51,12 @@
                         </div>
                         <div class="Box-row">
                             <input
-                                name="repo"
+                                name="search"
                                 type="text"
                                 class="width-full form-control"
                                 placeholder="Choose a repository..."
                                 autocomplete="off"
-                                ic-get-from="/repos"
+                                ic-get-from="/repo"
                                 ic-trigger-on="keyup changed"
                                 ic-beforeSend-action="toggleClass:loading"
                                 ic-complete-action="toggleClass:loading"
@@ -65,6 +65,7 @@
                                 ic-target="#repo-list"
                             >
                             <div id="repo-list">
+                                {{-- Will be replaced by Intercooler --}}
                             </div>
                         </div>
                         <div class="Box-footer">

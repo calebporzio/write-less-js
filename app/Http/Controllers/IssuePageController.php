@@ -8,7 +8,7 @@ class IssuePageController
 {
     public function show()
     {
-        return view('retro.comments', [
+        return view('issue-page', [
             'comments' => Comment::all(),
         ]);
     }

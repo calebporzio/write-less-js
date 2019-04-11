@@ -33,7 +33,11 @@
                 @keyup="fetchRepos"
             >
             <div id="repo-list">
-                <div class="border p-2 px-3 text-bold text-gray-dark d-flex flex-justify-between" v-for="(repo, index) in repos" :key="index">
+                <div
+                    class="border p-2 px-3 text-bold text-gray-dark d-flex flex-justify-between"
+                    v-for="(repo, index) in repos"
+                    :key="index"
+                >
                     <div>{{ repo.name }}</div>
                     <div class="text-gray-light">{{ repo.stars }} {{ Number(repo.stars) > 1 ? 'stars' : 'star' }}</div>
                 </div>
@@ -52,8 +56,8 @@
 export default {
     data() {
         return {
-            loading: false,
             showModal: false,
+            loading: false,
             search: '',
             repos: [],
         }
@@ -67,6 +71,8 @@ export default {
                 .then(response => {
                     this.repos = response.data.repos
                     this.loading = false
+                }).catch(() => {
+                    alert('Whoops, something went wrong')
                 })
         }
     },

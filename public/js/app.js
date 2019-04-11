@@ -2133,11 +2133,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      loading: false,
       showModal: false,
+      loading: false,
       search: '',
       repos: []
     };
@@ -2150,6 +2154,8 @@ __webpack_require__.r(__webpack_exports__);
       axios.get('/api/repo?search=' + this.search).then(function (response) {
         _this.repos = response.data.repos;
         _this.loading = false;
+      })["catch"](function () {
+        alert('Whoops, something went wrong');
       });
     }
   }
@@ -53122,10 +53128,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_CodePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/CodePage */ "./resources/js/components/CodePage.vue");
 /* harmony import */ var _components_IssuesPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/IssuesPage */ "./resources/js/components/IssuesPage.vue");
 /* harmony import */ var _components_IssuePage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/IssuePage */ "./resources/js/components/IssuePage.vue");
+
+
+
+
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-
 window.Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 var files = __webpack_require__("./resources/js sync recursive \\.vue$/");
@@ -53133,9 +53143,6 @@ var files = __webpack_require__("./resources/js sync recursive \\.vue$/");
 files.keys().map(function (key) {
   return Vue.component(key.split('/').pop().split('.')[0], files(key)["default"]);
 });
-
-
-
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
   mode: 'history',
   routes: [{
@@ -53152,7 +53159,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
     component: _components_IssuePage__WEBPACK_IMPORTED_MODULE_3__["default"]
   }]
 });
-var app = new Vue({
+new Vue({
   router: router,
   el: '#app'
 });

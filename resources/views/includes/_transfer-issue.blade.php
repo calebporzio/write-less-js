@@ -21,13 +21,6 @@
                 class="width-full form-control"
                 placeholder="Choose a repository..."
                 autocomplete="off"
-                ic-get-from="/repo"
-                ic-trigger-on="keyup changed"
-                ic-beforeSend-action="toggleClass:loading"
-                ic-complete-action="toggleClass:loading"
-                ic-trigger-delay="50ms"
-                ic-action-target="this"
-                ic-target="#repo-list"
             >
             <div id="repo-list">
                 {{-- Will be replaced by Intercooler --}}

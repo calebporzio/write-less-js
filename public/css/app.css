@@ -15028,6 +15028,25 @@ a.branch-name {
   width: 0;
 }
 
+details-dialog {
+  left: 50%;
+  margin: 10vh auto;
+  max-height: 80vh;
+  max-width: 90vw;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 448px;
+  z-index: 999;
+}
+
+.form-control.loading {
+  background-image: url(https://github.com/images/spinners/octocat-spinner-32.gif);
+  background-size: 16px;
+  padding-right: 30px;
+}
+
 .tabnav-tab {
   border: 1px solid transparent;
   border-top: 3px solid transparent;

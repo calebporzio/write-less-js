@@ -25,6 +25,26 @@
     width: 0;
 }
 
+// Details dialogue modal.
+details-dialog {
+    left: 50%;
+    margin: 10vh auto;
+    max-height: 80vh;
+    max-width: 90vw;
+    position: fixed;
+    top: 0;
+    transform: translateX(-50%);
+    width: 448px;
+    z-index: 999;
+}
+
+// Loading spinner.
+.form-control.loading {
+    background-image: url(https://github.com/images/spinners/octocat-spinner-32.gif);
+    background-size: 16px;
+    padding-right: 30px;
+}
+
 // Give selected navigation tabs a top border.
 .tabnav-tab {
     border: 1px solid transparent;

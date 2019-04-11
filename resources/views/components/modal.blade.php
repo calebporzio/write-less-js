@@ -18,7 +18,7 @@
             {{ $slot }}
         </div>
         <div class="Box-footer">
-            <button class="btn btn-block">{{ $cta }}</button>
+            <button class="btn btn-block">{{ $button }}</button>
         </div>
     </details-dialog>
 </details>

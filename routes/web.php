@@ -3,8 +3,8 @@
 Route::redirect('/', '/code');
 
 // Routes
-Route::view('/code', 'code');
-Route::view('/issues', 'issues');
+Route::get('/code', 'CodePageController@show');
+Route::get('/issues', 'IssuesPageController@show');
 Route::get('/issue', 'IssuePageController@show');
 Route::post('/issue/comment', 'IssuePageController@storeComment');
 Route::get('/repo', 'RepoController@index');

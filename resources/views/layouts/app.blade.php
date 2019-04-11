@@ -12,17 +12,17 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    {{-- Turbolinks --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer></script>
+
     {{-- jQuery --}}
-    <script
+    {{-- <script
   src="https://code.jquery.com/jquery-3.4.0.min.js"
   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> --}}
 
     {{-- Intercooler --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intercooler-js/1.2.2/intercooler.js" defer></script>
-
-    {{-- Turbolinks --}}
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer></script> --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intercooler-js/1.2.2/intercooler.js" defer></script> --}}
 </head>
 
 <body>

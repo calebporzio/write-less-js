@@ -9,7 +9,7 @@
                 <span class="text-gray"><strong>calebporzio</strong> commented 2 hours ago</span>
             </div>
             <div class="Box-row">
-                {{ comment.content }}
+                {{ comment }}
             </div>
         </div>
     </div>
@@ -18,6 +18,6 @@
 
 <script>
 export default {
-    props: { comment: Object },
+    props: { comment: String },
 }
 </script>

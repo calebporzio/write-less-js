@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Repository;
 
-class RepoController extends Controller
+class RepoController
 {
     public function index()
     {

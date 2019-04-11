@@ -9,22 +9,10 @@
     <title>GitTub</title>
 
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     {{-- Vue --}}
     <script src="{{ asset('js/app.js') }}" defer></script>
-
-    {{-- jQuery --}}
-    {{-- <script
-  src="https://code.jquery.com/jquery-3.4.0.min.js"
-  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-  crossorigin="anonymous"></script> --}}
-
-    {{-- Intercooler --}}
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intercooler-js/1.2.2/intercooler.js" defer></script> --}}
-
-    {{-- Turbolinks --}}
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer></script> --}}
 </head>
 
 <body>

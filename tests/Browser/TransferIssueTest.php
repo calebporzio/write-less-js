@@ -12,22 +12,6 @@ class TransferIssueTest extends DuskTestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function sees_repositories_searched()
-    {
-        $repo = factory(Repository::class)->create(['stars' => 1]);
-
-        $this->browse(function (Browser $browser) use ($repo) {
-            $browser->visit('/issue')
-                ->waitFor('@ready')
-                ->click('@transfer-issue-link')
-                ->type('search', $repo->name)
-                ->waitUntilMissing('@transfer-issue-link input.loading')
-                ->pause(250)
-                ->assertSeeIn('#repo-list', $repo->name);
-        });
-    }
-
-    /** @test */
     public function repository_stars_are_properly_pluralized()
     {
         $repoA = factory(Repository::class)->create(['stars' => 1]);

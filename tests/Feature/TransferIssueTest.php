@@ -14,10 +14,11 @@ class TransferIssueTest extends TestCase
     public function search_for_repositories()
     {
         $repoA = factory(Repository::class)->create(['name' => 'laravel']);
-        $repoB = factory(Repository::class)->create(['name' => 'not-laravel']);
+        $repoB = factory(Repository::class)->create(['name' => 'vue']);
 
         $response = $this->getJson('/api/repo?search=laravel');
 
         $response->assertJson(['repos' => [$repoA->toArray()]]);
+        $response->assertJsonMissing(['repos' => [$repoB->toArray()]]);
     }
 }

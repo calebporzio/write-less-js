@@ -1,20 +1,19 @@
 <?php
 
-namespace App\Http\Controllers\Retro;
+namespace App\Http\Controllers;
 
 use App\Comment;
-use App\Http\Controllers\Controller;
 
-class CommentController extends Controller
+class IssuePageController
 {
-    public function index()
+    public function show()
     {
         return view('retro.comments', [
             'comments' => Comment::all(),
         ]);
     }
 
-    public function store()
+    public function storeComment()
     {
         $comment = Comment::create(request()->validate([
             'content' => 'required',

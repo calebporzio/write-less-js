@@ -19,7 +19,7 @@ export default {
 
     methods: {
         loadCount() {
-            axios.get('/future/api/comment-count')
+            axios.get('/api/comment-count')
                 .then(response => {
                     this.count = response.data.count
                     this.loading = false

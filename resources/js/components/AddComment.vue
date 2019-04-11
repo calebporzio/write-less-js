@@ -47,7 +47,7 @@ export default {
 
             this.error = ''
 
-            axios.post('/future/api/comment', {
+            axios.post('/api/comment', {
                 content: this.content,
             }).then(() => {
                 this.content = ''

@@ -11,6 +11,7 @@ class CreateRepositoriesTable extends Migration
         Schema::create('repositories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('stars');
             $table->timestamps();
         });
     }

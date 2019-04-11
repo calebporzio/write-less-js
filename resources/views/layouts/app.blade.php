@@ -36,38 +36,31 @@
         </div>
     </div>
 
-    <div class="bg-gray-light pt-3">
-        <div class="container">
-            <div class="d-flex flex-items-center flex-justify-between mb-3 pagehead">
-                <div class="f3">
-                    <a>calebporzio</a> / <a class="text-bold">write-less-js</a>
-                </div>
+    <div id="app">
+        <div class="bg-gray-light pt-3">
+            <div class="container">
+                <div class="d-flex flex-items-center flex-justify-between mb-3 pagehead">
+                    <div class="f3">
+                        <a>calebporzio</a> / <a class="text-bold">write-less-js</a>
+                    </div>
 
-                <div class="BtnGroup mr-2">
-                    <button class="btn btn-sm BtnGroup-item" type="button">
-                        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> Star
-                    </button>
-                    <button class="btn btn-sm btn-outline BtnGroup-item" type="button">1</button>
+                    <div class="BtnGroup mr-2">
+                        <button class="btn btn-sm BtnGroup-item" type="button">
+                            <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg> Star
+                        </button>
+                        <button class="btn btn-sm btn-outline BtnGroup-item" type="button">1</button>
+                    </div>
                 </div>
+            </div>
+
+            <div class="tabnav">
+                @yield('nav')
             </div>
         </div>
 
-        <div class="tabnav">
-            <nav class="tabnav-tabs container" aria-label="Foo bar">
-                <a href="/code" class="tabnav-tab {{ request()->is('code') ? 'selected' : '' }}" aria-current="page">
-                    <svg fill="currentColor" class="text-gray-light octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
-                    Code
-                </a>
-                <a href="/issues" class="tabnav-tab {{ request()->is('issues') ? 'selected' : '' }}" aria-current="page">
-                    <svg fill="currentColor" class="text-gray-light octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
-                    Issues
-                </a>
-            </nav>
+        <div class="container">
+            @yield('content')
         </div>
-    </div>
-
-    <div class="container" id="app">
-        @yield('content')
     </div>
 
     {{-- Spacer --}}

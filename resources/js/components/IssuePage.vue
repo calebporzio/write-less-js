@@ -65,7 +65,7 @@ export default {
 
     methods: {
         loadComments() {
-            axios.get('/future/api/comment')
+            axios.get('/api/comment')
                 .then(response => {
                     this.comments = response.data
                     this.loading = false

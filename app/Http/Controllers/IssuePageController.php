@@ -12,13 +12,4 @@ class IssuePageController
             'comments' => Comment::all(),
         ]);
     }
-
-    public function storeComment()
-    {
-        $comment = Comment::create(request()->validate([
-            'content' => 'required',
-        ], ['required' => 'The comment cannot be empty']));
-
-        return redirect()->to('/retro/comment#comment-'.$comment->id);
-    }
 }

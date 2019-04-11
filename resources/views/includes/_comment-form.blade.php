@@ -1,3 +1,5 @@
+<div class="border-bottom"></div>
+
 {{-- Add Comment --}}
 <div class="clearfix p-3">
     <div class="float-left mr-3">

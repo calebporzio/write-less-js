@@ -12,13 +12,13 @@
         <div class="text-gray text-small">Last commit last night while drooling on the keyboard</div>
     </div>
 
-    @include('_code-row', ['file' => 'app', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
-    @include('_code-row', ['file' => 'config', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
-    @include('_code-row', ['file' => 'bootstrap', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
-    @include('_code-row', ['file' => 'storage', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
-    @include('_code-row', ['file' => 'resources', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
-    @include('_code-row', ['file' => 'routes', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
-    @include('_code-row', ['file' => 'bin', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
-    @include('_code-row', ['file' => 'tests', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
+    @include('includes._code-row', ['file' => 'app', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
+    @include('includes._code-row', ['file' => 'config', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
+    @include('includes._code-row', ['file' => 'bootstrap', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
+    @include('includes._code-row', ['file' => 'storage', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
+    @include('includes._code-row', ['file' => 'resources', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
+    @include('includes._code-row', ['file' => 'routes', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
+    @include('includes._code-row', ['file' => 'bin', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
+    @include('includes._code-row', ['file' => 'tests', 'commit' => 'Update PULL_REQUEST_TEMPLATE.md'])
 </div>
 @endsection

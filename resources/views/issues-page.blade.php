@@ -23,13 +23,13 @@
         </div>
     </div>
 
-    @include('_issue-row', ['title' => 'Im mad about something!'])
-    @include('_issue-row', ['title' => 'Im mad about something!'])
-    @include('_issue-row', ['title' => 'Im mad about something!'])
-    @include('_issue-row', ['title' => 'Im mad about something!'])
-    @include('_issue-row', ['title' => 'Im mad about something!'])
-    @include('_issue-row', ['title' => 'Im mad about something!'])
-    @include('_issue-row', ['title' => 'Im mad about something!'])
-    @include('_issue-row', ['title' => 'Im mad about something!'])
+    @include('includes._issue-row', ['title' => 'Im mad about something!'])
+    @include('includes._issue-row', ['title' => 'Im mad about something!'])
+    @include('includes._issue-row', ['title' => 'Im mad about something!'])
+    @include('includes._issue-row', ['title' => 'Im mad about something!'])
+    @include('includes._issue-row', ['title' => 'Im mad about something!'])
+    @include('includes._issue-row', ['title' => 'Im mad about something!'])
+    @include('includes._issue-row', ['title' => 'Im mad about something!'])
+    @include('includes._issue-row', ['title' => 'Im mad about something!'])
 </div>
 @endsection
